@@ -1,0 +1,8 @@
+# server
+/index.js
+
+# production
+/public/dist/*.js
+
+# dependencies
+/node_modules/**/*.js

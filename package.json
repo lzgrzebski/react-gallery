@@ -1,0 +1,37 @@
+{
+  "name": "react-gallery",
+  "version": "0.1.0",
+  "description": "simple react gallery with data which are comming from node server",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -p && node index",
+    "build": "webpack -p",
+    "dev": "webpack -d && node index",
+    "watch": "webpack -d --watch"
+  },
+  "author": "pexip && lzgrzebski",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.13.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "request": "^2.69.0",
+    "styled-components": "^2.0.0",
+    "webpack": "^2.6.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1"
+  }
+}

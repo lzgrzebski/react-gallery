@@ -1,0 +1,7 @@
+import styled from 'styled-components';
+
+export default styled.div`
+  width:300px;
+  flex: auto;
+  padding:10px;
+`;
