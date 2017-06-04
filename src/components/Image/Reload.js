@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Reload = () => (
   <ReloadWrapper>
-    <use href="#reload" />
+    <use xlinkHref="#reload" />
   </ReloadWrapper>
 );
 

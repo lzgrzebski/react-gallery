@@ -21,7 +21,7 @@ const Close = (props) => {
   };
   return (
     <CloseWrapper onClick={handleClick}>
-      <use href="#close" />
+      <use xlinkHref="#close" />
     </CloseWrapper>
   );
 };
