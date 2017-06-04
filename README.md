@@ -13,5 +13,5 @@ and user can reload images which are not loaded for the first time (added fallba
 * loader in the image modal
 * add information when user reached end that we dont have any more images
 
-## [Demo](http://)
+## [Demo](https://reactgallery.herokuapp.com/)
 

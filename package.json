@@ -1,7 +1,7 @@
 {
   "name": "react-gallery",
   "version": "0.1.0",
-  "description": "simple react gallery with data which are comming from node server",
+  "description": "simple react gallery with data comming from node server",
   "main": "index.js",
   "scripts": {
     "start": "webpack -p && node index",
