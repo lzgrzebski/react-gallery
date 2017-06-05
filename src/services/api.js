@@ -18,11 +18,18 @@ export default async (page, limit = constants.imageLimit) => {
   try {
     const { images } = await (await fetch(`/gallery?start=${page * limit}&count=${limit}`)).json();
     if (images.length === 0) {
+      // no results at all
+      if (page === 0) {
+        return { images: { [page]: {} }, lastPage: page, page };
+      }
+      // next page dont have any results, we will provide previous page and set as a last page
       return { lastPage: page - 1, page: page - 1 };
     }
+    // page have less results than limit, so its a last page
     if (images.length < limit) {
       return { images: { [page]: normalize(images) }, lastPage: page, page };
     }
+    // 'middle' page, still can fetch more images in the next page
     return { images: { [page]: normalize(images) }, page };
   } catch (e) {
     throw e;
