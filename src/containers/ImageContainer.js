@@ -50,7 +50,7 @@ class ImageContainer extends Component {
     this.props.handleClick(this.props.id, true, e);
   }
 
-  render() {
+  render = () => {
     if (this.state.failed) {
       return (
         <ImageWrapper padding={padding}>

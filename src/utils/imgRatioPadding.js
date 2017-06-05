@@ -7,5 +7,5 @@
 export default (size) => {
   const { width, height } = size;
   const ratio = width / height;
-  return (100 / ratio).toFixed(0);
+  return (100 / ratio).toFixed(2);
 };
